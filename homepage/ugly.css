@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+    width: 100%;
+    height: 300%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: url("images/face.png") repeat;
+    background-size: 15px;
+    background-blend-mode: saturation;
+    filter: drop-shadow(16px 16px 20px rgb(255, 136, 0));
+    font-family: cursive;
+}
+
+
+h1 {
+    text-decoration: underline;
+}
+
+.face-container {
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.face-container img {
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    margin: -30px 0px 0px -50px;
+    
+}
+
+.tabs {
+    display: table;
+    margin: 50px auto 0 auto;
+}
+
+input {
+    display: none;
+}
+
+input~.tab {
+    display: none
+}
+
+.bar {
+    width: 100vw;
+}
+
+input+label {
+    font-size: 2.0vw;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #999;
+    background: #EEE;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
+}
+input:checked+label {
+    background: linear-gradient(to right, #fff 50%, #0000a0 50%) right;
+    background-size: 200% 100%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    border-bottom: 1px solid transparent;
+    background-position: -100% 0;
+}
+
+input~.tab {
+    border-top: 1px solid #999;
+    padding: 12px;
+}
+
+
+#who+label{
+    margin: 0 0 0 18vw;
+}
+
+#who:checked~.tab.content1,
+#what:checked~.tab.content2,
+#history:checked~.tab.content3,
+#points:checked~.tab.content4 {
+    display: block;
+    color: rgb(17, 0, 255);
+}
+
+.tab h1 {
+    text-align: justify;
+    margin: 20px 30vw;
+}
+
+.tab h2, .tab h3, .tab h4, .tab h5 {
+    text-align: justify;
+    margin: 20px 15vw 20px 15vw;
+    box-shadow: 10px 10px 50px rgb(255, 0, 0);
+}
+
+.tab p, .tab li {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.tab ul {
+    margin-top: 5px;
+}
+
+.tab li {
+    text-align: left;
+    margin-top: 0px;
+}
+
+.tab.content1 h1 {
+    text-align: center;
+    margin: 20px 30px 20px -200px;
+    box-shadow: 15px 15px 20px rgb(115, 255, 0);
+}
+
+.tab.content4 ul {
+    margin-bottom: 0;
+}
+
+.tab.content4 h2 {
+    text-align: left;
+    margin: 20px 30vw 20px 30vw;
+    box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+
+.tab.content4 li {
+    margin-bottom: 30px;
+}
+
+.tab h2:nth-of-type(even),
+.tab h4:nth-of-type(even),
+.tab ul:nth-of-type(even) {
+    transform: rotate(-20deg);
+}
+
+.tab h2:nth-of-type(odd),
+.tab h4:nth-of-type(odd),
+.tab ul:nth-of-type(odd) {
+    transform: rotate(20deg);
+}
+
+.tab h2:nth-of-type(odd),
+.tab h2:nth-of-type(even) {
+    margin-top: 400px;
+}
+
+.tab h2:nth-of-type(odd):first-of-type {
+    margin-top: 150px;
+}
+
+.tab i {
+    font-size: small;
+    text-align: justify;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.tab.content1 h1 {
+    font-size: 150px;
+}

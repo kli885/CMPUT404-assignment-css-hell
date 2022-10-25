@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #2c2c2c;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.face-container {
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.face-container img {
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    margin: -30px 0px 0px -50px;
+    
+}
+
+.tabs {
+    display: table;
+    margin: 50px auto 0 auto;
+}
+
+input {
+    display: none;
+}
+
+input~.tab {
+    display: none
+}
+
+.bar {
+    width: 100vw;
+}
+
+input+label {
+    font-size: 2.0vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #999;
+    background: #EEE;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
+}
+input:checked+label {
+    background: linear-gradient(to right, #fff 50%, #0000a0 50%) right;
+    background-size: 200% 100%;
+    color: #fff;
+    transition: 0.5s ease-out;
+    border-bottom: 1px solid transparent;
+    background-position: -100% 0;
+}
+
+input~.tab {
+    border-top: 1px solid #999;
+    padding: 12px;
+}
+
+
+#who+label{
+    margin: 0 0 0 18vw;
+}
+
+#who:checked~.tab.content1,
+#what:checked~.tab.content2,
+#history:checked~.tab.content3,
+#points:checked~.tab.content4 {
+    display: block;
+    font-family: 'Inter';
+    color: rgb(255, 255, 255);
+}
+
+.tab h1 {
+    text-align: justify;
+    margin: 20px 30vw;
+}
+
+.tab h2, .tab h3, .tab h4, .tab h5 {
+    text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.tab p, .tab li {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.tab ul {
+    margin-top: 5px;
+}
+
+.tab li {
+    text-align: left;
+    margin-top: 0px;
+}
+
+.tab.content1 h1 {
+    text-align: center;
+    margin: 20px 30vw;
+}
+
+.tab.content4 ul {
+    margin-bottom: 0;
+}
+
+.tab.content4 h2 {
+    display: inline;
+    margin-right: 0;
+}
+
+.tab.content4 li {
+    margin-bottom: 30px;
+}
+
+.tab h2:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+.tab i {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-align: justify;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
